@@ -10,7 +10,7 @@ function App() {
           hello every one
         </p>
         
-          Learn React
+          nothing
        
       </header>
     </div>
