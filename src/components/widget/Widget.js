@@ -8,7 +8,7 @@ import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/MonetizationOn
 
 
 function Widget({type}) {
-    let data
+   let data
     switch(type){
         case "user":
         data={
@@ -17,6 +17,7 @@ function Widget({type}) {
              link:"see all users",
              icon:<PersonOutlinedIcon/>
         }
+        break;
         case "order":
         data={
              title:"ORDERS",
@@ -24,6 +25,7 @@ function Widget({type}) {
              link:"view all orders",
              icon:<ShoppingCartOutlinedIcon/>
         }
+        break
         case "earning":
         data={
              title:"EARNINGS",
@@ -31,6 +33,7 @@ function Widget({type}) {
              link:"view net earnings",
              icon:<MonetizationOnOutlinedIcon/>
         }
+        break
         case "balance":
         data={
              title:"BALANCE",
