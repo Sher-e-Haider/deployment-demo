@@ -49,7 +49,7 @@ function Widget({type}) {
         <div className="left">
             <span className="title">USERS</span>
             <span className="counter">21312</span>
-            <span className="link">see all users</span>
+            <span className="link">see alls users</span>
         </div>
         <div className="right">
          <div className="percentage positive">
