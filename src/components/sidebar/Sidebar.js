@@ -12,11 +12,13 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import DiamondRoundedIcon from '@mui/icons-material/DiamondRounded';
 import LogoutIcon from '@mui/icons-material/Logout';
+import { Link } from 'react-router-dom';
 
-function Sidebar() {
+function Sidebar({state,setState}) {
   return (
     <div className='sidebar' >
-     <div className="top"> <span className="logo">SahilAdmin</span> </div>
+     <div className="top">
+      <Link to='/' style={{textDecoration:'none'}} ><span className="logo">SahilAdmin</span></Link> </div>
      <hr />
      <div className="center">
          <ul>
@@ -28,11 +30,18 @@ function Sidebar() {
              <p className="title">LISTS</p>
              <li>
              <PeopleOutlineIcon className='icon' />
-             <span>Users</span>
+             <Link to='/users' style={{textDecoration:'none'}}>
+                <span>Users</span>
+             </Link>
+            
              </li>
              <li>
              <Inventory2Icon className='icon' />
-             <span> Products</span>
+             <Link to='/products' style={{textDecoration:'none'}}
+             >
+                 <span> Products</span>
+             </Link>
+             
              </li>
              <li>
              <VignetteIcon className='icon' />
@@ -76,9 +85,9 @@ function Sidebar() {
          </ul>
      </div>
      <div className="bottom">
-         <div className="colorOptins"></div>
-         <div className="colorOptins"></div>
-        
+         <div className="colorOptins" onClick={()=>setState(false)}></div>
+         <div className="colorOptins" onClick={()=>setState(true)}></div>
+                                               
 
      </div>
     </div>

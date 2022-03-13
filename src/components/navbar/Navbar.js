@@ -16,7 +16,7 @@ function Navbar() {
      <div className="wrappar">
        <div className="search">
          <input type="text" placeholder='Search' />
-         <SearchIcon/>
+         <SearchIcon className='searchIcon'/>
        </div>
        <div className="items">
          <div className="item">

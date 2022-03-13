@@ -8,14 +8,16 @@ import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/MonetizationOn
 
 
 function Widget({type}) {
-   let data
+   let data;
+   const amount=100
+   const diff=20
     switch(type){
         case "user":
         data={
              title:"USERS",
              isMoney:false,
              link:"see all users",
-             icon:<PersonOutlinedIcon/>
+             icon:<PersonOutlinedIcon style={{color:"crimson",background:"rgba(255,0,0,0.2)"}} />
         }
         break;
         case "order":
@@ -23,7 +25,7 @@ function Widget({type}) {
              title:"ORDERS",
              isMoney:false,
              link:"view all orders",
-             icon:<ShoppingCartOutlinedIcon/>
+             icon:<ShoppingCartOutlinedIcon style={{color:"yellow",background:"rgba(255,0,0,0.2)"}}/>
         }
         break
         case "earning":
@@ -31,7 +33,7 @@ function Widget({type}) {
              title:"EARNINGS",
              isMoney:true,
              link:"view net earnings",
-             icon:<MonetizationOnOutlinedIcon/>
+             icon:<MonetizationOnOutlinedIcon style={{color:"green",background:"rgba(255,0,0,0.2)" }}/>
         }
         break
         case "balance":
@@ -39,7 +41,7 @@ function Widget({type}) {
              title:"BALANCE",
              isMoney:true,
              link:"see all details",
-             icon:<AccountBalanceWalletOutlinedIcon/>
+             icon:<AccountBalanceWalletOutlinedIcon style={{color:"violet",background:"rgba(255,0,0,0.2)"}}/>
         }
         break;
         default:
@@ -50,16 +52,18 @@ function Widget({type}) {
   return (
     <div className="widget">
         <div className="left">
-            <span className="title">USERS</span>
-            <span className="counter">21312</span>
-            <span className="link">see alls users</span>
+            <span className="title">{data.title}</span>
+            <span className="counter">{data.isMoney&& "$"}{amount}</span>
+            <span className="link">{data.link}</span>
         </div>
         <div className="right">
          <div className="percentage positive">
          <KeyboardArrowUpIcon/>
-          20%
+         {diff} %
+          
          </div>
-         <PersonOutlinedIcon className='icon'/>
+         {/* <PersonOutlinedIcon className='icon'/> */}
+     {data.icon}
         </div>
     </div>
   )

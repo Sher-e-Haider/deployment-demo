@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding:0;
+   
+}
 .navbar{
     display: flex;
     height:50px;
@@ -23,6 +28,7 @@
                 border:none;
                 outline: none;
                 background-color: transparent;
+                margin-top:10px;
             }
         }
 
@@ -51,5 +57,33 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width:'390px') {
+    .wrappar{
+        
+        position: relative;
+       
+       display: flex;
+       flex-direction: column;
+       left: 0;
+       align-items:flex-start;
+       .search{
+       position:relative;
+       width:100%;
+        padding: 50px;
+       
+
+        input{
+            padding:5px;
+            margin-top:10px;
+        }
+        .searchIcon{
+            position:absolute;
+            right:0;
+            top:16px;
+        }
+    }
     }
 }
