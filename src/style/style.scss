@@ -1,60 +1,62 @@
-.app.dark{
-    background-color:#222;
-    .table{
-        background-color:#222;
-    }
-    span{
-        color:rgb(125, 122, 122);
-    }
-    .tableCell{
-        color:rgb(144, 141, 141);
-    }
-    .datatable{
-       a,.datagrid{
-           color:gray;
-       }
-      .viewButton,.deleteButton{
-          color:gray;
-          border:none;
-      }
-       
-    }
+// @media screen and (min-width:'200px'){
+    // .app.dark{
+    //     background-color:#222;
+    //     .table{
+    //         background-color:#222;
+    //     }
+    //     span{
+    //         color:rgb(125, 122, 122);
+    //     }
+    //     .tableCell{
+    //         color:rgb(144, 141, 141);
+    //     }
+    //     .datatable{
+    //        a,.datagrid{
+    //            color:gray;
+    //        }
+    //       .viewButton,.deleteButton{
+    //           color:gray;
+    //           border:none;
+    //       }
+           
+    //     }
+        
+    //     .sidebar{
+    //         li:hover{
+    //             background-color:gray;
+    //         }
+    //         li:hover span{
+    //             color:#fff;
+    //         }
+    //         .icon{
+    //             color:#999;
+    //         }
+    //     }
+    //     input{
+    //         background-color:transparent;
+    //         color:gray;
+    //     }
     
-    .sidebar{
-        li:hover{
-            background-color:gray;
-        }
-        li:hover span{
-            color:#fff;
-        }
-        .icon{
-            color:#999;
-        }
-    }
-    input{
-        background-color:transparent;
-        color:gray;
-    }
-
-    label{
-        color: gray;
-    }
-    transition: .5s;
-    p{
-        color: gray;
-    }
-    .navbar {
-        .icon, .item{
-             color: rgb(159, 156, 156);
-        }
+    //     label{
+    //         color: gray;
+    //     }
+    //     transition: .5s;
+    //     p{
+    //         color: gray;
+    //     }
+    //     .navbar {
+    //         .icon, .item{
+    //              color: rgb(159, 156, 156);
+    //         }
+           
+          
+    //     }
+    //     .listTitle{
+    //         color: gray;
+    //     }
        
-      
-    }
-    .listTitle{
-        color: gray;
-    }
-   
-}
-.app{
-    transition: .5s; 
-}
+    // }
+    // .app{
+    //     transition: .5s; 
+    // }
+

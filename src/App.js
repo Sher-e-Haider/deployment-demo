@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './pages/home/Home';
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { BrowserRouter as Router,Route,Routes } from "react-router-dom";
 import New from './pages/new/New';
 import Login from './pages/login/Login';
@@ -9,14 +9,15 @@ import List from './pages/list/List';
 import Single from './pages/single/Single'
 
 function App() {
-  const [state,setState] = useState(false)
+  const [state,setState] = useState(true)
+  
   
   return (
-    <div className={state?'dark app':'app'}>
+    <div className='ark'>
 
     
     <Router>
-    <div>
+    <div >
       
 
       {/* A <Switch> looks through its children <Route>s and
